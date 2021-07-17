@@ -1,2 +1,2 @@
 # desafio-frontend-developer-linx
-Desafio frontend develiper Junior da Linx
+Desafio frontend developer Junior da Linx
