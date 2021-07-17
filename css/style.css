@@ -1,0 +1,22 @@
+@import "header.css";
+@import "body.css";
+@import "footer.css";
+
+* {
+  Margin:0;
+  Padding:0;
+  Border:0;
+  font-family: Arial;
+}
+
+.layout-cinza {
+  background: #707070 0% 0% no-repeat padding-box;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.container-triagulo {
+  overflow: hidden;
+  width: 100%;
+}

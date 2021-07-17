@@ -1,0 +1,183 @@
+.conteudo {
+    margin: auto;
+    padding: 20px 0 0 0;
+    max-width: 920px;
+    color: #888888;
+}
+
+.conteudo button {
+    color: #888888;
+    max-width: 340px;
+    width: 100%;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.conteudo button:hover {
+    background-color: #f8f8f8;
+  }
+
+.conteudo .titulo-bloco {
+    border-top: 2px solid #888;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.conteudo .titulo-bloco label {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 16px;
+    position: relative;
+    top: -9px;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.f-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-element-radio {
+    display: flex;
+}
+
+.f-element, .f-element-radio {
+    margin-bottom: 20px;
+}
+
+.f-element label{
+    margin-bottom: 7px;
+}
+
+.f-element-radio label{
+    margin-right: 40px;
+}
+
+.f-element label, .f-element-radio label{
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.f-element input{
+    border: 1px solid #707070;
+    width: 340px;
+    height: 30px;
+}
+
+.f-element-radio input{
+    margin-right: 5px;
+    border: 1px solid #707070;
+}
+
+#algoritimo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+#algoritimo .a-info {
+    max-width: 520px;
+    width: 100%;
+}
+
+#algoritimo form{
+    max-width: 340px;
+    width: 100%;
+}
+
+#algoritimo h1, #algoritimo p{
+    text-align: left;
+}
+
+#algoritimo h1{
+    font-size:20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+#algoritimo p{
+    font-size:12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+#lista-produtos {
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista-produtos .l-container {
+    margin-top: 60px;
+    width: 100%;
+}
+
+#lista-produtos .l-container .l-item{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#lista-produtos .l-container .l-item img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 14px;
+}
+
+#lista-produtos .l-container .l-item label {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+#lista-produtos .l-container .l-item span {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+#lista-produtos .l-container .l-item b {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+#lista-produtos .l-loading {
+    margin-top: 50px;
+}
+
+#compartilhe .c-container {
+    margin-top: 55px;
+}
+
+#compartilhe .c-container p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#compartilhe .c-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#compartilhe .c-container .c-lista {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#compartilhe .c-container .c-lista .f-element{
+    padding: 0 20px;
+    margin-bottom: 0;
+}

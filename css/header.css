@@ -1,0 +1,87 @@
+header h2 {
+    font-size: 20px;
+    line-height: 23px;
+    padding-top: 69px;
+  }
+  
+  header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+  }
+  
+  header p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 24px;
+  }
+  
+  header nav {
+    padding: 40px 40px 0 40px;
+    position: relative;
+    top: 30px;
+    max-width: 800px;
+    min-width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  header button {
+    width: 160px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  header button:hover {
+    background-color: #f8f8f8;
+  }
+
+  header .container-triagulo .h-triangulo-esquina{
+	width: 0;
+	height: 0;
+	border-top: 200px solid #707070;
+	border-left: 2000px solid transparent;
+  background: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+    header h1,  header h2, header p {
+        text-align: left;
+    }
+
+    header h2 {
+        padding-top: 66px;
+    }
+
+    header h1 {
+        line-height: 53px;
+      }
+
+    header p {
+        padding-top: 9px;
+    }
+
+    header .layout-cinza {
+        padding: 0 16px;
+    }
+    header nav {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    header nav {
+        max-width: 200px;
+        justify-content: center;
+    }
+}
