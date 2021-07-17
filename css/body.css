@@ -1,7 +1,7 @@
 .conteudo {
     margin: auto;
     padding: 20px 0 0 0;
-    max-width: 920px;
+    max-width: 960px;
     color: #888888;
 }
 
@@ -24,7 +24,9 @@
     border-top: 2px solid #888;
     display: flex;
     justify-content: center;
+    max-width: 920px;
     width: 100%;
+    margin: auto;
 }
 
 .conteudo .titulo-bloco label {
@@ -79,6 +81,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
+    padding: 0 20px;
 }
 
 #algoritimo .a-info {
@@ -89,6 +92,7 @@
 #algoritimo form{
     max-width: 340px;
     width: 100%;
+    margin-left: 30px;
 }
 
 #algoritimo h1, #algoritimo p{
@@ -111,11 +115,21 @@
     margin-bottom: 140px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #lista-produtos .l-container {
     margin-top: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#lista-produtos .l-item-fantasma {
+    max-width: 200px;
+    padding: 0 20px;
     width: 100%;
 }
 
@@ -123,6 +137,8 @@
     max-width: 200px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 #lista-produtos .l-container .l-item img{
@@ -130,6 +146,13 @@
     height: 150px;
     margin-bottom: 14px;
 }
+
+
+#lista-produtos .l-container .l-item .l-item-info{
+    display: flex;
+    flex-direction: column;
+}
+
 
 #lista-produtos .l-container .l-item label {
     font-size: 14px;
@@ -140,21 +163,23 @@
 #lista-produtos .l-container .l-item span {
     font-size: 12px;
     line-height: 16px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 }
 
 #lista-produtos .l-container .l-item b {
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 }
 
 #lista-produtos .l-loading {
-    margin-top: 50px;
+    margin-top: 10px;
+    align-self: center;
 }
 
 #compartilhe .c-container {
     margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 #compartilhe .c-container p{
@@ -181,3 +206,93 @@
     padding: 0 20px;
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 960px) {
+    #lista-produtos .l-container .l-item img{
+        min-width: 170px;
+        height: 130px;
+        margin-right: 20px;
+        max-width: 170px;
+    }
+
+    #lista-produtos .l-container .l-item .l-item-descricao{
+        display: none;
+    }
+
+    #lista-produtos .l-container .l-item, #lista-produtos .l-item-fantasma {
+        max-width: 400px;
+        flex-direction: row;
+        padding: 0 20px 0 10px;
+    }
+
+    #lista-produtos .l-container .l-item .l-item-info {
+        min-width: 200px;
+    }
+    
+}
+
+@media only screen and (max-width: 880px) {
+    #lista-produtos .l-container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #algoritimo {
+        flex-direction: column;
+    }
+    #algoritimo .a-info {
+        max-width: none;
+        width: 100%;
+    }
+    #algoritimo form {
+        max-width: none;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-element, .f-element-radio {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .f-element input {
+        width: 100%;
+    }
+
+    #compartilhe .c-container .c-lista {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #compartilhe .c-container .c-lista .f-element {
+        padding: 0 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #lista-produtos .l-container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #lista-produtos .l-container {
+        justify-content: center;
+    }
+
+    #lista-produtos .l-container .l-item, #lista-produtos .l-item-fantasma {
+        flex-direction: column;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    #lista-produtos .l-container .l-item img {
+        margin-right: 0;
+        min-width: 200px;
+    }
+}
+
