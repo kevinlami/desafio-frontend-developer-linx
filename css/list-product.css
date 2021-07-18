@@ -18,6 +18,7 @@
     max-width: 200px;
     padding: 0 20px;
     width: 100%;
+    order: 1;
 }
 
 #list-product .l-container .l-item{
