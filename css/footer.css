@@ -5,11 +5,11 @@ footer p {
     line-height: 17px;
   }
   
-  footer .layout-cinza {
+  footer .layout-gray {
     padding: 85px 0;
   }
   
-  .container-triagulo .f-triangulo-esquina{
+  .container-triangle .f-triangle-corner{
       width: 0;
       height: 0;
       border-bottom: 100px solid #707070;
