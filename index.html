@@ -41,18 +41,19 @@
                         <p> Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
                     </div>
                 </div>
-                <form>
+                <form id="algorithm-form">
                     <div class="f-element">
-                        <label>Seu nome:</label>
-                        <input>
+                        <label for="name">Seu nome:</label>
+                        <input required id="name" name="name">
                     </div>
                     <div class="f-element">
-                        <label>E-mail:</label>
-                        <input>
+                        <label for="email">E-mail:</label>
+                        <input type="email" required id="email" name="email">
                     </div>
                     <div class="f-element">
-                        <label>CPF:</label>
-                        <input>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" maxlength="14" required id="cpf" name="cpf">
+                        <span id="cpf-erro" class="error">CPF inválido!</span>
                     </div>
 
                     <div class="f-element-radio">
@@ -84,12 +85,12 @@
                     <form>
                         <div class="c-list">
                             <div class="f-element">
-                                <label>Nome do seu amigo:</label>
-                                <input>
+                                <label for="name-friend">Nome do seu amigo:</label>
+                                <input required id="name-friend" name="name-friend">
                             </div>
                             <div class="f-element">
-                                <label>E-mail:</label>
-                                <input>
+                                <label for="email-friend">E-mail:</label>
+                                <input type="email" required id="email-friend" name="email">
                             </div>
                         </div>
                         <button>Enviar agora</button>
