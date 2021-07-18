@@ -1,0 +1,50 @@
+#algorithm {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    padding: 0 20px;
+}
+
+#algorithm .a-info {
+    max-width: 520px;
+    width: 100%;
+}
+
+#algorithm form{
+    max-width: 340px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+#algorithm h1, #algorithm p{
+    text-align: left;
+}
+
+#algorithm h1{
+    font-size:20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+#algorithm p{
+    font-size:12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    #algorithm {
+        flex-direction: column;
+    }
+    #algorithm .a-info {
+        max-width: none;
+        width: 100%;
+    }
+    #algorithm form {
+        max-width: none;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

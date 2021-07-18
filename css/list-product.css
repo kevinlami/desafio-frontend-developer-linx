@@ -1,0 +1,117 @@
+#list-product {
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+#list-product .l-container {
+    margin-top: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#list-product .l-item-ghost {
+    max-width: 200px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+#list-product .l-container .l-item{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+#list-product .l-container .l-item img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 14px;
+}
+
+
+#list-product .l-container .l-item .l-item-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#list-product .l-container .l-item label {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+#list-product .l-container .l-item span {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+#list-product .l-container .l-item b {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+#list-product .l-loading {
+    margin-top: 10px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 960px) {
+    #list-product .l-container .l-item img{
+        min-width: 170px;
+        height: 130px;
+        margin-right: 20px;
+        max-width: 170px;
+    }
+
+    #list-product .l-container .l-item .l-item-descricao{
+        display: none;
+    }
+
+    #list-product .l-container .l-item, #list-product .l-item-ghost {
+        max-width: 400px;
+        flex-direction: row;
+        padding: 0 20px 0 10px;
+    }
+
+    #list-product .l-container .l-item .l-item-info {
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    #list-product .l-container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #list-product .l-container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #list-product .l-container {
+        justify-content: center;
+    }
+
+    #list-product .l-container .l-item, #list-product .l-item-ghost {
+        flex-direction: column;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    #list-product .l-container .l-item img {
+        margin-right: 0;
+        min-width: 200px;
+    }
+}

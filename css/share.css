@@ -1,0 +1,41 @@
+#share .c-container {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+#share .c-container p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#share .c-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#share .c-container .c-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#share .c-container .c-list .f-element{
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    #share .c-container .c-list {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #share .c-container .c-list .f-element {
+        padding: 0 0;
+        margin-bottom: 20px;
+    }
+}
