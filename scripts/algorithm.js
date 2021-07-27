@@ -6,19 +6,20 @@ document.getElementById('a-arrow').onclick=function(){
     }
 };
 
-$("#cpf").on("keyup", function(){
+document.getElementById('cpf').addEventListener("keyup", function(){
     formatCPF('###.###.###-##', this);
-});
- 
- $("#algorithm-form").on("submit", function(){
-    
-    var cpf = $("#cpf").val().replace(/[.|-]/g,'');
+}, false);
+
+function validateCpf(event){
+    var cpf = document.getElementById('cpf').value.replace(/[.|-]/g,'');
     
     if( !checkCPF(cpf) ){
         document.getElementById("cpf-erro").classList.add('invalido');
         return false
-    }
-});
+    } 
+
+    return true;
+}
  
 function formatCPF(m,d){
     var i = d.value.length;
@@ -30,12 +31,12 @@ function formatCPF(m,d){
         }
 
         if(i >= 0){
-            var c = $("#cpf").val();
+            var c = document.getElementById('cpf').value;
             c = c.replace( /\D/g , "");
             c = c.replace( /(\d{3})(\d)/ , "$1.$2");
             c = c.replace( /(\d{3})(\d)/ , "$1.$2");
             c = c.replace( /(\d{3})(\d{1,2})$/ , "$1-$2");
-            $("#cpf").val(c);
+            document.getElementById('cpf').value = c;
         }
     }
 }

@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="">
         <link rel="stylesheet" href="css/style.css">
-        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     </head>
 
     <body>
@@ -41,7 +40,7 @@
                         <p> Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
                     </div>
                 </div>
-                <form id="algorithm-form">
+                <form id="algorithm-form" onsubmit="return validateCpf(event)">
                     <div class="f-element">
                         <label for="name">Seu nome:</label>
                         <input required id="name" name="name">

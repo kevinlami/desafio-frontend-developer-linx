@@ -23,22 +23,22 @@ function addItem (image, name, description, oldPrice, price, installmentsCount, 
 }
 
 function loadingPage () {
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": urlApiListProduct,
-        "method": "GET"
-      }
-    
-      $.ajax(settings).done(function (response) {
-        if ( response.products ) {
+      var xhr = new XMLHttpRequest();
+
+      xhr.responseType = 'JSON';
+      xhr.onreadystatechange = function() {
+          if ( xhr.readyState == 4 && xhr.status == 200 ) {
+            let response = JSON.parse(xhr.response);
             for (var i = 0; i < response.products.length; i++) {
                 addItem (response.products[i].image, response.products[i].name, response.products[i].description, response.products[i].oldPrice, response.products[i].price, response.products[i].installments.count, response.products[i].installments.value );
             }
 
             checkingForNextPage (response.nextPage);
-        }
-      });
+          }
+      }
+      xhr.open("GET", urlApiListProduct );
+
+      xhr.send();
 }
 
 function checkingForNextPage ( nextPage ) {
